@@ -1,0 +1,77 @@
+@media only screen and (min-width: 38rem) {
+    #content {
+
+        max-width: 1600px;
+        margin: 0 auto;
+
+    }
+
+    footer {
+
+        grid-template-columns: auto auto auto;
+
+
+    }
+
+    #cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    #champions {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+
+    #images .card picture img {
+
+        opacity: 0.7;
+        transition: opacity 0.3s;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    #images .card picture img:hover {
+
+        opacity: 1.0;
+        transform: scale(1.01);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /*MENU STUFF*/
+    #myButton {
+
+        display: none;
+    }
+
+    ul.menuLinks,
+    ul.menuLinks.open {
+
+        display: flex;
+        justify-content: flex-end;
+
+    }
+
+    nav {
+
+        grid-template-rows: 1fr;
+    }
+
+
+    #container {
+
+        display: grid;
+        grid-template-columns: 500px 1fr;
+    }
+
+
+    #application {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brazil Administrative Divisions - Home Page</title>
+    <meta name="description"
+        content="WDD 330 - Web Frontend Development II - Rafael Castro Brazil Administrative Divisions - Home Page" />
+    <meta name="author" content="Rafael Castro" />
+    <meta property="og:title" content="Brazil Administrative Divisions - Home" />
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rpscastro.github.io/wdd330/final-project/index.html" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/menutransition.js" defer></script>
+    <script src="scripts/index.js" defer></script>
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <img src="images/brasil.webp" width="128" height="96" alt="Brasil Flag" />
+            <div>
+                <h2>BRAZIL</h2>
+                <h3>Brazil Administrative Divisions</h3>
+            </div>
+            <button id="myButton" title="menu"></button>
+        </header>
+        <nav id="animateme">
+            <ul class="menuLinks">
+                <li class="current-menu-item">
+                    <a href="index.html" title="Home">Home</a>
+                </li>
+                <li><a href="brazil.html" title="Brazil Info">Brazil Info</a></li>
+                <li><a href="regions.html" title="Regions">Regions</a></li>
+                <li><a href="favorite.html" title="Favorites">Favorites</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Home</h1>
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    
+                    <picture>
+                        <source media="(min-width: 700px)" srcset="images/regiao-centro-oeste.webp">
+                        <img src="images/regiao-centro-oeste.webp" loading="lazy" alt="Brazil Midwest Region Sights">
+                        <h2>Midwest</h2>
+                    </picture>
+                </div>
+
+                <div class="mySlides fade">
+                   
+                    <picture>
+                        <source media="(min-width: 700px)" srcset="images/regiao-norte.webp">
+                        <img src="images/regiao-norte.webp" loading="lazy" alt="Brazil North Region Sights">
+                        <h2>North</h2>
+                    </picture>
+                </div>
+
+                <div class="mySlides fade">
+                    
+                    <picture>
+                        <source media="(min-width: 700px)" srcset="images/regiao-nordeste.webp">
+                        <img src="images/regiao-nordeste.webp" loading="lazy" alt="Brazil Northeast Region Sights">
+                        <h2>Northeast</h2>
+                    </picture>
+                </div>
+
+                <div class="mySlides fade">
+                   
+                    <picture>
+                        <source media="(min-width: 700px)" srcset="images/regiao-sul.webp">
+                        <img src="images/regiao-sul.webp" loading="lazy" alt="Brazil South Region Sights">
+                        <h2>South</h2>
+                    </picture>
+                </div>
+                <div class="mySlides fade">
+                    
+                    <picture>
+                        <source media="(min-width: 700px)" srcset="images/regiao-sudeste.webp">
+                        <img src="images/regiao-sudeste.webp" loading="lazy" alt="Brazil Southeast Region Sights">
+                        <h2>Southeast</h2>
+                    </picture>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+
+        </main>
+        <footer>
+            <div class="project-info">
+                <h3>WDD330 Final Project</h3>
+                <p>Rafael Pereira de Souza Castro</p>
+                <p><span id="currentyear"></span> Brazil Administrative Divisions</p>
+                <p id="lastModified"></p>
+                <a href="attributions.html" title="Attributions">Attributions</a>
+            </div>
+
+        </footer>
+    </div>
+</body>
+
+</html>

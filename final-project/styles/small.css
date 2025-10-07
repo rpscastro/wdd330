@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Noto+Serif:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #263D92;
+    color: #FFFFFF;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 50px auto 44px;
+    align-items: end;
+}
+
+header div {
+    margin-left: 60px;
+}
+
+body {
+    font-family: 'Lato', Helvetica, sans-serif;
+}
+
+main h1 {
+    color: #263D92;
+    background-color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 20px;
+    margin-top: 0;
+}
+
+footer {
+    display: grid;
+    background: #263D92;
+    color: #FFFFFF;
+    padding: 2rem;
+    text-align: left;
+    font-family: 'Lato', Helvetica, sans-serif;
+}
+
+
+
+footer div {
+    margin: 10px;
+}
+
+footer a {
+    color: #ffffff;
+}
+
+.card {
+    color: #263D92;
+    background-color: #ffffff;
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px #333;
+}
+
+.card h3 p {
+    margin: 10px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+#champions .card {
+    cursor: pointer;
+}
+
+h2 {
+    color: #263D92;
+}
+
+select {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    color: #184E2C;
+    margin: 10px;
+}
+
+/* Estilo para o select quando está focado */
+select:focus {
+    border-color: #66afe9;
+    outline: none;
+    box-shadow: 0 0 5px rgba(102, 175, 233, 0.6);
+}
+
+/* Estilo para as opções dentro do select */
+option {
+    padding: 10px;
+    background-color: #fff;
+    color: #184E2C;
+}
+
+label {
+
+    margin-left: 15px;
+    color: #184E2C
+}
+
+
+
+.label {
+    font-weight: bold;
+}
+
+.menu {
+    justify-content: space-around;
+    font-family: 'Lato', Helvetica, sans-serif;
+    text-align: center;
+}
+
+.menu button {
+    /* display: block; */
+    flex: 1 1 100%;
+    margin: 5px;
+    text-align: center;
+    text-decoration: none;
+    width: 75px;
+    height: 35px;
+    font-weight: bold;
+    box-shadow: 0 0 5px #333;
+}
+
+.menu button:hover {
+    background: black;
+    color: white;
+}
+
+.card a {
+    color: navy;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+
+#thankyou p,
+#thankyou h3 {
+
+    color: #002776;
+}
+
+#thankyou,
+#attributions {
+
+    margin: 15px;
+}
+
+#attributions ul {
+
+    margin: 20px;
+}
+
+
+
+
+
+
+#images .card picture img {
+
+    width: 100%;
+    height: auto;
+}
+
+
+/*NAVIGATION STUFF HERE*/
+nav {
+    background-color: #002776;
+}
+
+#myButton::before {
+    content: "\2630";
+}
+
+#myButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #002776;
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+    padding: .25rem 2vw;
+}
+
+ul.menuLinks li a {
+    display: block;
+    padding: .75rem 2vw;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #002776;
+}
+
+li.current-menu-item a::before {
+    content: "📍";
+}
+
+ul.menuLinks {
+    list-style-type: none;
+}
+
+/* CSS for the open class */
+#myButton.open::before {
+    content: "x";
+}
+
+nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+nav ul {
+    overflow: hidden;
+}
+
+nav.open {
+    grid-template-rows: 1fr;
+}
+
+#animateme a:hover {
+    color: #002776;
+    background-color: #ffffff;
+}
+
+/*FORM STUFF*/
+form {
+    margin: 1rem 2%;
+}
+
+form label {
+    display: block;
+    font-size: .8rem;
+    color: black;
+    padding-top: .2rem;
+}
+
+form h3 {
+    font-size: .9rem;
+    margin: 1.5rem 0 .2rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+form input[type=text],
+form input[type=tel],
+form input[type=date],
+form input[type=email],
+form select {
+    display: block;
+    margin: .1rem 0 1rem 0;
+    padding: .3rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+    border-left-width: 5px;
+    border-left-color: #555;
+    font-size: 1rem;
+    color: #3D405B;
+    width: 250px;
+}
+
+form input:required {
+    border-left-color: #d70000;
+}
+
+form input:focus {
+    border-left-color: black;
+    outline: none;
+}
+
+form input:required:valid {
+    border-left-color: green;
+}
+
+form input[type=submit] {
+    border: none;
+    text-align: center;
+    background-color: #002776;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+form input[type=radio] {
+    margin: 10px;
+    padding: 5px;
+}
+
+form input[type=submit]:hover {
+    background-color: #555;
+}
+
+form textarea {
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+    white-space: normal;
+    text-align: justify;
+    -moz-text-align-last: center;
+    /* Firefox 12+ */
+    text-align-last: center;
+}
+
+form input:-webkit-autofill {
+    -webkit-text-fill-color: #3D405B;
+}
+
+button {
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: #002776;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#dialogBox {
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    color: #002776;
+    box-shadow: 0 0 10px #333;
+    border: none;
+}
+
+#dialogBox div {
+    text-align: left;
+    margin: 10px 10px;
+}
+
+#dialogBox li {
+    margin: 5px 20px;
+}
+
+#dialogBox hr,
+p {
+    margin: 10px 0px;
+}
+
+
+
+
+/***Slide Show***/
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: 'Lato', Helvetica, sans-serif;
+    margin: 0
+}
+
+.mySlides {
+    display: none;
+    text-align: center;
+}
+
+
+
+
+picture img {
+    vertical-align: middle;
+    max-width: 800px;
+    height: auto;
+}
+
+.card picture img {
+    vertical-align: middle;
+    max-width: 100px;
+    height: auto;
+}
+
+.team_info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.team_info div {
+    text-align: left;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
