@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brazil Administrative Divisions - Favorites Page</title>
+    <meta name="description"
+        content="WDD 330 - Web Frontend Development II - Rafael Castro Brazil Administrative Divisions - Favorites Page" />
+    <meta name="author" content="Rafael Castro" />
+    <meta property="og:title" content="Brazil Administrative Divisions - Favorites" />
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rpscastro.github.io/wdd330/final-project/index.html" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/menutransition.js" defer></script>
+    <script src="scripts/favorites.js" defer></script>
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <img src="images/brasil.webp" width="128" height="96" alt="Brasil Flag" />
+            <div>
+                <h2>BRAZIL</h2>
+                <h3>Brazil Administrative Divisions</h3>
+            </div>
+            <button id="myButton" title="menu"></button>
+        </header>
+        <nav id="animateme">
+            <ul class="menuLinks">
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="brazil.html" title="Brazil Info">Brazil Info</a></li>
+                <li><a href="regions.html" title="Regions">Regions</a></li>
+                <li class="current-menu-item"><a href="favorites.html" title="Favorites">Favorites</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Favorites</h1>
+            <div id="cards"></div>
+        </main>
+        <footer>
+            <div class="project-info">
+                <h3>WDD330 Final Project</h3>
+                <p>Rafael Pereira de Souza Castro</p>
+                <p><span id="currentyear"></span> Brazil Administrative Divisions</p>
+                <p id="lastModified"></p>
+                <a href="attributions.html" title="Attributions">Attributions</a>
+            </div>
+
+        </footer>
+    </div>
+</body>
+
+</html>

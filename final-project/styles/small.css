@@ -39,6 +39,7 @@ footer {
     padding: 2rem;
     text-align: left;
     font-family: 'Lato', Helvetica, sans-serif;
+    margin-top: 15px;
 }
 
 
@@ -72,7 +73,19 @@ footer a {
     cursor: pointer;
 }
 
-h2 {
+.info h3,.info p {
+    color: #263D92;
+    margin-left: 15px;
+} 
+
+.info picture {
+    
+    margin: 15px;
+    margin-bottom: 15px;
+}
+
+h2
+{
     color: #263D92;
 }
 
@@ -101,16 +114,11 @@ option {
     color: #184E2C;
 }
 
-label {
-
-    margin-left: 15px;
-    color: #184E2C
-}
-
-
 
 .label {
     font-weight: bold;
+    margin-left: 15px;
+    color: #263D92;
 }
 
 .menu {
