@@ -6,7 +6,7 @@ let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
 
 function renderFavorites(favorites) {
     if (favorites.length === 0) {
-        cards.innerHTML = "<p>No favorite states added yet.</p>";
+      cards.innerHTML = `<h3 id="message">No favorite states added yet.</h3>`;
         return;
     }
     const html = favorites.map(
