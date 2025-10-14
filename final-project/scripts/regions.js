@@ -12,7 +12,7 @@ async function apiFetchStatesInfo() {
         if (response.ok) {
             dataStates = await response.json();
             console.log(dataStates);
-            
+
         } else {
             throw Error(await response.text());
         }
@@ -24,11 +24,11 @@ async function apiFetchStatesInfo() {
 
 async function apiFetchStatesFlags() {
     try {
-        const response = await fetch(flagsUrl); 
+        const response = await fetch(flagsUrl);
         if (response.ok) {
             statesFlags = await response.json();
             console.log(statesFlags);
-            
+
         } else {
             throw Error(await response.text());
         }
@@ -46,7 +46,7 @@ function getStatesData() {
 
 
 
-function renderStates(states){
+function renderStates(states) {
     const html = states.map(
         (state) => `<div class="card team_info">
     <picture>
@@ -102,16 +102,16 @@ function filterStates(states) {
 }
 
 function addStateToFavorites(sigla) {
-    
+
     const state = dataStates.find(s => s.sigla === sigla);
-    
+
     const newFavoriteState = {
         name: state.nome,
         sigla: state.sigla,
         region: state.regiao.nome,
         flag: statesFlags.find(estado => estado.uf === state.sigla).flag_url
     };
-  
+
     let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
     let containsState = favorites.find(s => s.sigla === sigla);
     if (!containsState) {
@@ -120,7 +120,7 @@ function addStateToFavorites(sigla) {
         displayMessage(state.nome, "has been added to your favorites!");
     } else {
         displayMessage(state.nome, "is already in your favorites!");
-    }       
+    }
 }
 
 
